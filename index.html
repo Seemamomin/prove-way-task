@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BOGO Offer</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub-main">
+        <!-- Header Box -->
+        <div class="box-1">
+          <div class="sub-box-1"><hr /></div>
+          <h3>YAY! It's BOGO</h3>
+          <div class="sub-box-1"><hr /></div>
+        </div>
+
+        <!-- First Unit Option -->
+        <div class="merge">
+          <div class="box-2">
+            <div class="sub-1-box-2">
+              <div class="radio">
+                <input
+                  type="radio"
+                  name="unit"
+                  id="unit1"
+                  value="1unit"
+                  onclick="toggleExpandable('expandable1')"
+                />
+              </div>
+              <div class="content">
+                <span class="unit-title">1 Units</span>
+                <span class="discount-box">10% Off</span><br />
+                <span class="subtitle">Standard Price</span>
+              </div>
+            </div>
+            <div class="sub-2-box-2">
+              <span class="price">$10.00 USD</span><br />
+              <s class="original-price">$24.00 USD </s>
+            </div>
+          </div>
+
+          <!-- Expandable content inside merge -->
+          <div
+            class="expandable-content"
+            id="expandable1"
+            style="display: none"
+          >
+            <!-- Header Row for Labels -->
+            <div class="header-row">
+              <div class="column"></div>
+              <div class="column">Size</div>
+              <div class="column">Colour</div>
+            </div>
+
+            <!-- Row for #1 -->
+            <div class="row">
+              <div class="column">
+                <label for="size-1">#1</label>
+              </div>
+              <div class="column">
+                <select name="size-1" id="size-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select name="color-1" id="color-1">
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row for #2 -->
+            <div class="row">
+              <div class="column">
+                <label for="size-2">#2</label>
+              </div>
+              <div class="column">
+                <select name="size-2" id="size-2">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select name="color-2" id="color-2">
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Unit Option with Expandable Content -->
+        <div class="merge">
+          <div class="box-2">
+            <div class="sub-1-box-2">
+              <div class="radio">
+                <input
+                  type="radio"
+                  name="unit"
+                  id="unit2"
+                  checked
+                  value="1unit"
+                  onclick="toggleExpandable('expandable2')"
+                />
+              </div>
+              <div class="content">
+                <span class="unit-title">2 Units</span>
+                <span class="discount-box">20% Off</span><br />
+              </div>
+            </div>
+            <div class="sub-2-box-2">
+              <span class="price">$18.00 USD</span><br />
+              <s class="original-price">$24.00 USD </s>
+            </div>
+          </div>
+
+          <!-- Expandable content inside merge -->
+          <div
+            class="expandable-content"
+            id="expandable2"
+            style="display: none"
+          >
+            <!-- Header Row for Labels -->
+            <div class="header-row">
+              <div class="column"></div>
+              <div class="column">Size</div>
+              <div class="column">Colour</div>
+            </div>
+
+            <!-- Row for #1 -->
+            <div class="row">
+              <div class="column">
+                <label for="size-1">#1</label>
+              </div>
+              <div class="column">
+                <select name="size-1" id="size-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select name="color-1" id="color-1">
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row for #2 -->
+            <div class="row">
+              <div class="column">
+                <label for="size-2">#2</label>
+              </div>
+              <div class="column">
+                <select name="size-2" id="size-2">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select name="color-2" id="color-2">
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Unit Option (Similar structure) -->
+        <div class="merge">
+          <div class="box-2">
+            <div class="sub-1-box-2">
+              <div class="radio">
+                <input
+                  type="radio"
+                  name="unit"
+                  id="unit3"
+                  value="1unit"
+                  onclick="toggleExpandable('expandable3')"
+                />
+              </div>
+              <div class="content">
+                <span class="unit-title">3 Units</span>
+                <span class="discount-box">30% Off</span><br />
+              </div>
+            </div>
+            <div class="sub-2-box-2">
+              <span class="price">$24.00 USD</span><br />
+              <s class="original-price">$24.00 USD</s>
+            </div>
+          </div>
+
+          <!-- Expandable content inside merge -->
+          <div
+            class="expandable-content"
+            id="expandable3"
+            style="display: none"
+          >
+            <!-- Header Row for Labels -->
+            <div class="header-row">
+              <div class="column"></div>
+              <div class="column">Size</div>
+              <div class="column">Colour</div>
+            </div>
+
+            <!-- Row for #1 -->
+            <div class="row">
+              <div class="column">
+                <label for="size-1">#1</label>
+              </div>
+              <div class="column">
+                <select name="size-1" id="size-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select name="color-1" id="color-1">
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row for #2 -->
+            <div class="row">
+              <div class="column">
+                <label for="size-2">#2</label>
+              </div>
+              <div class="column">
+                <select name="size-2" id="size-2">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select name="color-2" id="color-2">
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-4">
+          <span class="free">Free Delivery</span>
+          <span class="total">Total: $18.00 USD</span>
+        </div>
+
+        <div class="btn">
+          <button>+ Add To Cart</button>
+        </div>
+
+        <div class="ftr">
+          <span>@ Powered by Pumper</span>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

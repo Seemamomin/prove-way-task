@@ -1,0 +1,165 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  height: 90vh; 
+  width: 30%;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0px 0px 4px rgb(29, 28, 28);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.sub-main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+  justify-content: space-between;
+  gap: 10px; 
+}
+
+.box-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; 
+}
+
+.box-1 h3 {
+  text-align: center;
+  color: #ff6b82;
+  font-weight: 600;
+}
+
+.sub-box-1 {
+  width: 30%;
+}
+
+.merge {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+.box-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; 
+}
+
+.sub-1-box-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  accent-color: #ff6b82;
+  width: 18px;
+  height: 18px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.unit-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.discount-box {
+  background-color: #ff6b82;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.sub-2-box-2 {
+  text-align: right;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+.original-price {
+  color: #999;
+  font-size: 12px;
+}
+
+.box-4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0; 
+}
+
+.box-4 .free {
+  color: #ff6b82;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.box-4 .total {
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.btn button {
+  width: 100%;
+  height: 2rem;
+  background-color: #ff6b82;
+  border-radius: 5px;
+  border: 1px solid #ff6b82;
+  color: white;
+  flex-shrink: 0; 
+}
+
+.ftr {
+  display: flex;
+  justify-content: flex-end;
+  color: #868181;
+  font-size: 12px;
+}
+
+.expandable-content {
+  padding: 5px;
+  flex-shrink: 0; 
+}
+
+.header-row,
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.column {
+  width: 20%;
+}
+
+select,
+label {
+  font-size: 12px;
+  padding: 2px;
+  width: 100%;
+}
+
